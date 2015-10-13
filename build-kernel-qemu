@@ -7,6 +7,7 @@
 TOOLCHAIN=$(pwd)/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf
 
 git clone https://github.com/raspberrypi/linux.git
+git clone https://github.com/raspberrypi/tools.git
 patch -p1 -d linux/ < linux-arm.patch
 cd linux
 git checkout 77798915750db46f10bb449e1625d6368ea42e25
